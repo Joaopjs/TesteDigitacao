@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/customcss.css" rel="stylesheet">
+    <title>Teste Digitação</title>
+</head>
+
+<body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-faded" id="navcor">
+        <a class="navbar-brand" href="#">
+            <img src="src/logoapp.png" style="max-width: 30%; max-height: 30%;" alt="Teste Digitacao">
+        </a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Textos
+            </button>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row d-flex">
+            <i style="margin-top: 2%;">Sem Caracteres Especiais&nbsp;&nbsp;&nbsp;<input type="checkbox" class="caracteres" name=checkbox></i>
+            <i id="msgatualizar" style="margin-left: 15%; margin-top: 2%; font-size: 1.3em; color: blue;"></i>
+            <div class="ml-auto contador btn btn-primary ">
+
+            </div>
+        </div>
+        <div class="row" id="textarea"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="custonclass">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="textareadigitar" rows="3" aria-setsize=""></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row h4" style="color: darkgreen;">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 card">PPM<br/><i class="ppm h2" style="margin-left: 20%;"></i></div>
+            <div class="col-md-2 card">Precisão<br/><i class="precisao" style="margin-left: 20%;"></i></div>
+            <div class="col-md-2 card">Digitados<br/><i class="digitados" style="margin-left: 20%;"></i></div>
+            <div class="col-md-2 card">Acertos<br/><i class="acertos" style="margin-left: 20%;"></i></div>
+            <div class="col-md-2 card">Erros<br/><i class="erros" style="margin-left: 20%;"></i></div>
+            <div class="col-md-1"></div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Footer -->
+            <footer id="footer">
+                <!-- Copyright -->
+                <div id="footer-letter">© github/joaopjs:
+                    <a href="https://github.com/joaopjs"> Joao Paulo</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessário para os plugins Javascript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Inclua todos os plugins compilados (abaixo), ou inclua um por um quando for necessário -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script id="json" type="text/javascript" src="src/textos.json"></script>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script type="text/javascript" src="js/beravior.js"></script>
+
+</body>
+
+</html>
